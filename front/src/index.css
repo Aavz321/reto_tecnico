@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-black text-white;
+}
+
+:root {
+  --food: #efedde;
+  --pacman: #f5c42c;
+  --bg: #212346;
+}
+
+.container-pacman {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.food {
+  fill: var(--food);
+}
+
+.pacman {
+  fill: var(--pacman);
+}
